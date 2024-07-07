@@ -8,6 +8,7 @@
 // && e
 // || retorna verdadeiro caso ambos os operandos sejam verdadeiro
 // ! não é igual
+// % pega o resto da divisão
 
 
  
@@ -47,4 +48,15 @@ if(imc >= 18.5 && imc <=24.9){
 }
 else{
     console.log("Seu IMC é " +imc+  ", então você esta acima do peso.")
+}
+
+
+//Escreva um programa que determine se um determinado ano é bissexto.
+
+let ano = 1981
+
+if(ano % 4 == 0 || ano % 100 == 0 || ano % 400 == 0){
+    console.log("ano bissexto")
+}else{
+    console.log("Não é um ano bissexto")
 }
