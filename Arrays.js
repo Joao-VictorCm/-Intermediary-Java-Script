@@ -36,3 +36,20 @@ if(lista.includes(nomeDigitado)){
 }else{
     console.log("Seu nome não esta na lista")
 }
+
+
+
+// Quem está comprando o almoço? Desafio de código
+// Você escreverá uma função que selecionará um nome aleatório de uma lista de nomes. A pessoa selecionada terá que pagar a conta de alimentação de todos.
+
+function pagarConta (nomes){
+
+    nomes = [ "ciclano", "giovanna", "joao", "drogo", "simba"]
+
+    let numeroPessoas = nomes.length //. length puxa quantos itens ha dentro do objeto
+    let randomPessoasPosition = Math.floor(Math.random() * numeroPessoas) // vai gerar um numero aleatorio entre 0 e o numeros que o .length vai retornar
+    let randomPessoas = nomes[randomPessoasPosition] // vai retornar o nome da pessoa ligada ao numero aleatorio retornado 
+
+    return console.log(randomPessoas + " vai pagar a conta")
+}
+pagarConta()
